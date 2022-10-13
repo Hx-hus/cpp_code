@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\C语言\24-9-22\24-9-22\源.cpp(7,34): warning C4305: “-=”: 从“double”到“float”截断
+C:\C语言\24-9-22\24-9-22\源.cpp(10,36): warning C4305: “+=”: 从“double”到“float”截断
+  24-9-22.vcxproj -> C:\C语言\24-9-22\x64\Debug\24-9-22.exe
