@@ -8,9 +8,9 @@ int main()
 		if (a > 0)
 			printf("1\n");
 		else if (a == 0)
-			printf("0\n");
+			printf("0.5\n");
 		else
-			printf("-1\n");
+			printf("0\n");
 	}
 	return 0;
 }
