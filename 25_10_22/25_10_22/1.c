@@ -1,35 +1,78 @@
+
+
 #include<stdio.h>
 
-int main()
+void game()
 {
 
-    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-    int a = 2;
-    int sz = sizeof(arr) / sizeof(arr[0]);
-    int right = sz - 1;
-    int left = 0;
-    while (left <= right)
-    {
-        int z = (left + right) / 2;
-        if (arr[z] < a)
-        {
-            left = z + 1;
-        }
-        else if (arr[z] > a)
-        {
-           right = z - 1;
-        }
-        else
-        {
-            printf("找到目标");
-            break;
-        }
-    }
-    if (left > right)
-    printf("该数组没有所找目标");
-    return 0;
+
+
 
 }
+void jiemian()
+{
+	printf("*****************************\n");
+	printf("****     1. 开始游戏     ****\n");
+	printf("****     0. 退出游戏     ****\n");
+	printf("*****************************\n");
+}
+
+void mian()
+{
+	int a = 0;
+	do
+	{
+		jiemian();
+		if (a == 1)
+		{
+			printf("开始游戏");
+			game();
+		}
+		else if (a == 0)
+		{
+			printf("退出游戏");
+		}
+		else
+		{
+			printf("输入错误，重新选择");
+		}
+
+
+	} while (a == 0);
+	return 0;
+}
+
+//int main()
+//{
+//
+//    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//    int a = 2;
+//    int sz = sizeof(arr) / sizeof(arr[0]);
+//    int right = sz - 1;
+//    int left = 0;
+//    while (left <= right)
+//    {
+//        int z = (left + right) / 2;
+//        if (arr[z] < a)
+//        {
+//            left = z + 1;
+//        }
+//        else if (arr[z] > a)
+//        {
+//           right = z - 1;
+//        }
+//        else
+//        {
+//            printf("找到目标");
+//            break;
+//        }
+//    }
+//    if (left > right)
+//    printf("该数组没有所找目标");
+//    return 0;
+//
+//
+//}
 
 
 //int main()
