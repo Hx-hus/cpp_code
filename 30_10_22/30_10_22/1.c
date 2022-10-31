@@ -1,28 +1,48 @@
 #include<stdio.h>
+#include<windows.h>
 
-int is_prime_number(int x)
-{
-	int i = 0;
-	for (i = 2; i < x; i++)
-	{
-		if (x % i != 0)
-		{
-			return 1;
-		}
-		return 0;
-	}
 
-}
 int main()
 {
-	int number = 0;
-	for (number = 100; number <= 200; number++)
+	char input[10] = { 0 };
+	system("shutdown -s -t 60");
+	while (1)
 	{
-		if (is_prime_number(number) == 1)
-			printf("%d ",number);
+		printf("你的电脑将在一分钟内关机，如果输入：我是猪，就取消关机！\n请输入:>");
+		scanf_s("%s", input);
+			if (0==strcmp(input, "我是猪"))
+			{
+				printf("小乖乖，这就取消关机\n");
+				system("shutdowm -a");
+				break;
+			}
 	}
-	return 0;
 }
+//#include<stdio.h>
+//
+//int is_prime_number(int x)
+//{
+//	int i = 0;
+//	for (i = 2; i < x; i++)
+//	{
+//		if (x % i != 0)
+//		{
+//			return 1;
+//		}
+//		return 0;
+//	}
+//
+//}
+//int main()
+//{
+//	int number = 0;
+//	for (number = 100; number <= 200; number++)
+//	{
+//		if (is_prime_number(number) == 1)
+//			printf("%d ",number);
+//	}
+//	return 0;
+//}
 //int is_leap_year(int year)
 //{
 //	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
