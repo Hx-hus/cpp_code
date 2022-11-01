@@ -11,7 +11,6 @@ int main()
 	int a = 0;
 	scanf_s("%d", &a);
 	int arr = my_shu(a);
-	printf("%d", arr);
 	return  0;
 }
 //int my_strlen(char arr[],int i)
