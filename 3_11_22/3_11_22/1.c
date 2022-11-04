@@ -1,19 +1,20 @@
 #include<stdio.h>
 
-void my_reverse_string(char arr[], int i)
+void my_reverse_string(char arr[], int x,int y)
 {
-	if(arr[i]!='\0')
-	{ 
-		i++;
-		return my_reverse_string(arr[i], i);
+	if(x<=y)
+	{	 
+		x++;
+		return my_reverse_string(arr[x], x,y);
 	}
-	printf("%c", arr[i]);
+	printf("%c", arr[x]);
  }
 int main()
 {
-	char arr[] = "asdfghj";
-	int i = 0;
-	my_reverse_string(&arr[i], i);
+	char arr[] = "bit";
+	int left = 0;
+	int right = sizeof(arr) / sizeof(arr[0]);
+	my_reverse_string(arr,left,right);
 	return 0;
 }
 //char my_reverse_string(char* ch[], int i)
