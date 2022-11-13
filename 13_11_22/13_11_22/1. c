@@ -1,0 +1,7 @@
+#incldue
+
+int mian ()
+{
+
+	return 0;
+}
