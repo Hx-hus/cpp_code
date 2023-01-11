@@ -13,7 +13,7 @@ char* my_strstr(const char* str1, const char* str2)
 	{
 		s2 = str2;
 		s1 = p;
-		while (s1 != '\0' && s2 != '\0' && *s1 == *s2)
+		while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
 		{
 			s1++;
 			s2++;
@@ -24,14 +24,14 @@ char* my_strstr(const char* str1, const char* str2)
 		}
 		p++;
 	}
-	return NULL;
+	return (NULL);
 }
 int main()
 {
 	char ch1[] = "qwerasdddff";
-	char ch2[] = "ddf";
+	char ch2[] = "dff";
 	char* str=my_strstr(ch1,ch2);
-	if (str == NULL)
+	if (*str == (NULL))
 	{
 		printf("ch2²»ÊÇch1µÄ×Ö´®");
 	}
