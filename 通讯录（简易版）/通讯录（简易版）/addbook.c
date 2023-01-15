@@ -3,25 +3,74 @@
 #include"addbook.h"
 
 //初始化通讯录
+//静态
+//void init_addbook(addb* ab)
+//{
+//	assert(ab);
+//	ab->sz= 0;
+//	memset(ab->s, 0, sizeof(ab->s));
+//}
+// 动态
 void init_addbook(addb* ab)
 {
 	assert(ab);
-	ab->sz= 0;
-	memset(ab->s, 0, sizeof(ab->s));
+	ab->sz = 0;
+	addb* ptr = (addb*)calloc(_MAX, sizeof(addb));
+	if (ptr == NULL)
+	{
+		perror(ptr);
+		return;
+	}
+	ab->s = ptr;
+	ab->max = _MAX;
 }
 //添加联系人
+//静态版本
+//void add_book(addb* ab)
+//{
+//	assert(ab);
+//	if (ab->sz == MAX)
+//	{
+//		printf("通讯录已满");
+//		return;
+//	}
+//	printf("请输入姓名:>");
+//	scanf("%s", ab->s[ab->sz].name);
+//	printf("请输入年龄:>");
+//	scanf("%d", &(ab->s[ab->sz].age)); 
+//	printf("请输入性别:>");
+//	scanf("%s", ab->s[ab->sz].gen);
+//	printf("请输入地址:>");
+//	scanf("%s", ab->s[ab->sz].loc);
+//	printf("请输入电话:>");
+//	scanf("%s", ab->s[ab->sz].ph);
+//	printf("联系人添加成功\n");
+//	ab->sz++;
+//}
+// 动态版本
+//扩容
+void dil_init(addb* ab)
+{
+	if (ab->sz == ab->max)
+	{
+		addb* ptr = (addb*)realloc(ab->s, (ab->max + INIT_MAX) * sizeof(addb*));
+		if (ptr == NULL)
+		{
+			perror(dil_init);
+			return;
+		}
+		ab->max += INIT_MAX;
+		printf("扩容成功\n");
+	}
+}
 void add_book(addb* ab)
 {
 	assert(ab);
-	if (ab->sz == MAX)
-	{
-		printf("通讯录已满");
-		return;
-	}
+	dil_init(ab);
 	printf("请输入姓名:>");
 	scanf("%s", ab->s[ab->sz].name);
 	printf("请输入年龄:>");
-	scanf("%d", &(ab->s[ab->sz].age)); 
+	scanf("%d", &(ab->s[ab->sz].age));
 	printf("请输入性别:>");
 	scanf("%s", ab->s[ab->sz].gen);
 	printf("请输入地址:>");
@@ -124,11 +173,19 @@ void show_book(addb* ab)
 													ab->s[i].loc,
 													ab->s[i].ph);
 	}
-
 }
 //qsort
 int name_sort(const void* s1, const void* s2)
 {
 	assert(s1 && s2);
 	return strcmp((char*)s1, (char*)s2);
+}
+//释放内存
+void Free_book(addb* ab)
+{
+	free(ab->s);
+	ab->s = NULL;
+	ab->max = 0;
+	ab->sz = 0;
+	ab = NULL;
 }
