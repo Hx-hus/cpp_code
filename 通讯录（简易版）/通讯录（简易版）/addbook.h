@@ -44,3 +44,6 @@ void amend_book(addb* ab);//修改联系人
 void show_book(addb* ad);//显示全部联系人
 int name_sort(const void* s1, const void* s2);//qsort
 void Free_book(addb* ab);//清空借用的内存
+void kuorong(addb* ab);//扩容
+void write_file(addb* ab);//把东西放入到文件当中
+void Fopenfile(addb* ab);//打开文件

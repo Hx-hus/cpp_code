@@ -10,11 +10,26 @@
 //	ab->sz= 0;
 //	memset(ab->s, 0, sizeof(ab->s));
 //}
-// 动态
+//动态
+//void init_addbook(addb* ab)
+//{
+//	assert(ab);
+//	ab->sz = 0;
+//	addb* ptr = (addb*)calloc(_MAX, sizeof(addb));
+//	if (ptr == NULL)
+//	{
+//		perror(ptr);
+//		return;
+//	}
+//	ab->s = ptr;
+//	ab->max = _MAX;
+//}
+//有文件的动态版本
 void init_addbook(addb* ab)
 {
 	assert(ab);
 	ab->sz = 0;
+	ab->max = _MAX;
 	addb* ptr = (addb*)calloc(_MAX, sizeof(addb));
 	if (ptr == NULL)
 	{
@@ -22,7 +37,28 @@ void init_addbook(addb* ab)
 		return;
 	}
 	ab->s = ptr;
-	ab->max = _MAX;
+	Fopenfile(ab);
+}
+//打开文件
+void Fopenfile(addb* ab)
+{
+	FILE* pf = fopen("addbook.txt", "wd");
+	if (pf == NULL)
+	{
+		perror(36);
+		return;
+	}
+	struct addbook tmp = { 0 };
+	int i = 0;
+	while (fread(&tmp, sizeof(ab->s), 1, pf))
+	{
+		kuorong(ab);
+		ab->s[i] = tmp;
+		ab->sz++;
+		i++;
+	}
+	fclose(pf);
+	pf = NULL;
 }
 //添加联系人
 //静态版本
@@ -49,14 +85,14 @@ void init_addbook(addb* ab)
 //}
 // 动态版本
 //扩容
-void dil_init(addb* ab)
+void kuorong(addb* ab)
 {
 	if (ab->sz == ab->max)
 	{
 		addb* ptr = (addb*)realloc(ab->s, (ab->max + INIT_MAX) * sizeof(addb*));
 		if (ptr == NULL)
 		{
-			perror(dil_init);
+			perror(ptr);
 			return;
 		}
 		ab->max += INIT_MAX;
@@ -66,7 +102,7 @@ void dil_init(addb* ab)
 void add_book(addb* ab)
 {
 	assert(ab);
-	dil_init(ab);
+	kuorong(ab);
 	printf("请输入姓名:>");
 	scanf("%s", ab->s[ab->sz].name);
 	printf("请输入年龄:>");
@@ -188,4 +224,22 @@ void Free_book(addb* ab)
 	ab->max = 0;
 	ab->sz = 0;
 	ab = NULL;
+}
+//关闭之前把东西写入文件
+void write_file(addb* ab)
+{
+	FILE* pf = fopen("addbook.txt", "wb");
+	if (pf == NULL)
+	{
+		perror(write_file);
+		return;
+	}
+	int i = 0;
+	for (; i < ab->sz; i++)
+	{
+		fwrite(ab->s + i, sizeof(ab->s), 1, pf);
+	}
+	fclose(pf);
+	pf = NULL;
+	printf("保存成功\n");
 }

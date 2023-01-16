@@ -45,6 +45,7 @@ int main()
 			qsort(&ab, ab.sz, sizeof(ab.s[0]),name_sort);
 			break;
 		case 0:
+			write_file(&ab);
 			Free_book(&ab);
 			printf("�˳�ͨѶ¼\n");
 			break;
