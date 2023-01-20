@@ -6,21 +6,36 @@ using namespace std;
 
 //class person1;
 //
-//class person
-//{
-//	friend void person1::test1();
-//public:
-//	person()
-//	{
-//		_name = "张三";
-//		_car = "奥迪A8";
-//		_phone = "iphone 100 por max";
-//	}
-//	string _name;
-//private:
-//	string _car;
-//	string _phone;
-//};
+class person
+{
+public:
+	person();
+	void test1();
+	string _name;
+	string _car;
+	string _phone;
+};
+
+person::person()
+{
+	_name = "张三";
+	_car = "奥迪A8";
+	_phone = "iphone 100 por max";
+}
+void person::test1()
+{
+	cout << "现在访问的是：" << _name << endl;
+	cout << "现在访问的是：" << _name << "的" << _car << endl;
+	cout << "现在访问的是：" << _name << "的" << _phone << endl;
+	
+}
+
+int main()
+{
+	person p1;
+	p1.test1();
+	return 0;
+}
 //class person1
 //{
 //public:
@@ -99,48 +114,48 @@ using namespace std;
 //	test01();
 //	return 0;
 //}
-class person1;
-void person1::test();
-
-class person
-{
-	friend void person1::test();
-public:
-	person()
-	{
-		_name = "张三";
-		_car = "奥迪A8";
-		_phone = "iphone 100 por max";
-	}
-	string _name;
-private:
-	string _car;
-	string _phone;
-};
-class person1
-{
-public:
-	void test()
-	{
-		cout << "现在访问的是：" << p->_name<< endl;
-		cout << "现在访问的是：" << p->_name<< "的" <<  p->_car<< endl;;
-		cout << "现在访问的是：" << p->_name << "的" << p->_phone << endl;;
-	}
-	person *p;
-};
-void test1()
-{
-	person1 pp1;
-	pp1.p = new person;
-	pp1.test();
-	delete pp1.p;
-	pp1.p = NULL;
-}
-int main()
-{
-	test1();
-	return 0;
-}
+//class person1;
+//void person1::test();
+//
+//class person
+//{
+//	friend void person1::test();
+//public:
+//	person()
+//	{
+//		_name = "张三";
+//		_car = "奥迪A8";
+//		_phone = "iphone 100 por max";
+//	}
+//	string _name;
+//private:
+//	string _car;
+//	string _phone;
+//};
+//class person1
+//{
+//public:
+//	void test()
+//	{
+//		cout << "现在访问的是：" << p->_name<< endl;
+//		cout << "现在访问的是：" << p->_name<< "的" <<  p->_car<< endl;;
+//		cout << "现在访问的是：" << p->_name << "的" << p->_phone << endl;;
+//	}
+//	person *p;
+//};
+//void test1()
+//{
+//	person1 pp1;
+//	pp1.p = new person;
+//	pp1.test();
+//	delete pp1.p;
+//	pp1.p = NULL;
+//}
+//int main()
+//{
+//	test1();
+//	return 0;
+//}
 //class person
 //{
 //	friend void test1();
