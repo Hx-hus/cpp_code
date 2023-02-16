@@ -1,9 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-#define PRINT(A ,B) printf(#B"的结果是"A"\n",B);
+#define _ADD(A ,B) num##A+=B;
 
 int main()
 {
-	PRINT("%d",1+2);
+	int num5 = 5;
+	_ADD(5, 10);
+	printf("%d", num5);
 	return 0;
 }
