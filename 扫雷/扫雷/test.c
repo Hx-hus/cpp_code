@@ -23,7 +23,7 @@ void game()
 	print_board(board, ROW, LIN);
 	//埋雷
 	bury_mine(mine, ROW, LIN);
-	print_board(mine, ROW, LIN);
+	//print_board(mine, ROW, LIN);
 	//排查坐标是否合法
 	while (1)
 	{
