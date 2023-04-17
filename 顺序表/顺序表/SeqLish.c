@@ -76,7 +76,7 @@ void SeqListPopFront(SeqList* ps)
 	//头删只需要讲全部元素前移一位即可
 	for (int i = 0; i < ps->size; i++)
 	{
-		ps->a[i + 1] = ps->a[i];
+		ps->a[i] = ps->a[i + 1];
 	}
 	ps->size--;
 }
@@ -107,7 +107,6 @@ void SeqListInsert(SeqList* ps, int pos, SLDateType x)
 	assert(pos >= 0 && pos <= ps->size);
 	//先扩容
 	SeqListdilata(ps);
-	//判断一下pos是哪个位置，如果是特殊情况，如头插尾插，就进行头插和尾插
 	int end = ps->size - 1;
 	while (end >= pos)
 	{
@@ -127,9 +126,9 @@ void SeqListErase(SeqList* ps, int pos)
 		SeqListPopFront(ps);
 	if (pos == ps->size)
 		SeqListPopBack(ps);
-	for (int i = pos+1; i < ps->size ; i++)
+	for (int i = pos + 1; i < ps->size ; i++)
 	{
-		ps->a[i-1] = ps->a[i];
+		ps->a[i - 1] = ps->a[i];
 	}
 	ps->size--;
 }

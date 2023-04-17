@@ -6,7 +6,7 @@ int main()
 {
 	SeqList  a;
 	SeqListInit(&a);
-	SeqListDestroy(&a);
+
 	for (int i = 0; i < 5; i++)
 	{
 		SeqListPushBack(&a, i);
@@ -15,10 +15,12 @@ int main()
 	{
 		SeqListPushFront(&a, i);
 	}
+	SeqListPrint(&a);
 	SeqListPopFront(&a);
-	SeqListPopBack(&a);	
+	SeqListPrint(&a);
+	SeqListPopBack(&a);
 	SeqListPrint(&a);
 	SeqListDestroy(&a);
-
+	SeqListPrint(&a);
 	return 0;
 }
