@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1 
 
-#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<assert.h>
 #include<Windows.h>
@@ -183,7 +182,7 @@ void Insert(struct PlaneNode* pstPlaneNodeHead)
 	while (1)
 	{
 		printf("Input the flight number (-1 to end):");
-		scanf_s("%s", acFlight, 20);
+		scanf("%s", acFlight, 20);
 		getchar();
 		if (strcmp(acFlight, "-1") == 0)
 		{
@@ -203,22 +202,22 @@ void Insert(struct PlaneNode* pstPlaneNodeHead)
 		}
 		//如果航班号没有和现有记录航班号重复 ，则重新建一个链表节点
 		pstNew = (struct PlaneNode*)malloc(sizeof(struct PlaneNode));
-		strcpy_s(pstNew->stDate.acFlight, 20, acFlight);
+		strcpy(pstNew->stDate.acFlight, 20, acFlight);
 
 		printf("Input the Start City:\n");
-		scanf_s("%s", pstNew->stDate.acOrigin, 10);
+		scanf("%s", pstNew->stDate.acOrigin, 10);
 		printf("Input the Dest City:\n");
-		scanf_s("%s", pstNew->stDate.acDest, 20);
+		scanf("%s", pstNew->stDate.acDest, 20);
 		printf("Input the Departure time(Format 00:00):\n");
-		scanf_s("%s", pstNew->stDate.acTakeOffTime, 10);
+		scanf("%s", pstNew->stDate.acTakeOffTime, 10);
 		printf("Input the Arrival time(Format 00:00):\n");
-		scanf_s("%s", pstNew->stDate.acReverceTime, 10);
+		scanf("%s", pstNew->stDate.acReverceTime, 10);
 		printf("Input the Price of ticket:\n ");
-		scanf_s("%f", &pstNew->stDate.fPrice);
+		scanf("%f", &pstNew->stDate.fPrice);
 		printf("Input the discount(Fromat(0.0):\n");
-		scanf_s("%s", pstNew->stDate.acDisscount, 4);
+		scanf("%s", pstNew->stDate.acDisscount, 4);
 		printf("Input the number of the tickets:\n");
-		scanf_s("%d", &pstNew->stDate.iNum);
+		scanf("%d", &pstNew->stDate.iNum);
 
 		pstNew->pstNext = NULL;
 		pstTail->pstNext = pstNew;
@@ -246,12 +245,12 @@ void Search(PPlaneNode pstPlaneNodeHead)
 		return;
 	}
 	printf("Choose one way according to:\n 1.flight  2.Dest:\n");
-	scanf_s("%d", &iSel);
+	scanf("%d", &iSel);
 	if (iSel == 1)
 	{
 		char acFlight[20];
 		printf("请输入要查询的航班号:\n");
-		scanf_s("%s", &acFlight, 20);
+		scanf("%s", &acFlight, 20);
 		getchar();
 		//打开订票信息文件
 		for (pstPlaneNodeCur; pstPlaneNodeCur != NULL; pstPlaneNodeCur = pstPlaneNodeCur->pstNext)
@@ -270,7 +269,7 @@ void Search(PPlaneNode pstPlaneNodeHead)
 	{
 		char acDest;
 		printf("Input the Dest City:\n");
-		scanf_s("%s", &acDest, 20);
+		scanf("%s", &acDest, 20);
 		PrintHead();
 		for (pstPlaneNodeCur; pstPlaneNodeCur != NULL; pstPlaneNodeCur = pstPlaneNodeCur->pstNext)
 		{
@@ -330,7 +329,7 @@ void Modify(PPlaneNode pstPlaneNodeHead)
 	else
 	{
 		printf("Input the flight number you want to modify:\n");
-		scanf_s("%s", acFlight, 20);
+		scanf("%s", acFlight, 20);
 		for (pstPlaneNodeCur; pstPlaneNodeCur != NULL; pstPlaneNodeCur = pstPlaneNodeCur->pstNext)
 		{
 			if (strcmp(pstPlaneNodeCur->stDate.acFlight, acFlight) == 0)
@@ -347,7 +346,7 @@ void Modify(PPlaneNode pstPlaneNodeHead)
 			system("cls");
 			Mod_menu();
 			printf("please Input 0-8: ");
-			scanf_s("%d", &isel);
+			scanf("%d", &isel);
 			getchar();
 			switch (isel)
 			{
@@ -453,9 +452,9 @@ void Recommend(PPlaneNode pstPlaneNodeHead)
 	int iNum = 0;
 	pstPlaneNodeCur = pstPlaneNodeHead->pstNext;
 	printf("Input your destination");
-	scanf_s("%s", acDest, 20);
+	scanf("%s", acDest, 20);
 	printf("Input the earlist time you can take:");
-	scanf_s("%s", acTime, 10);
+	scanf("%s", acTime, 10);
 	PrintHead();
 	for (pstPlaneNodeCur; pstPlaneNodeCur != NULL; pstPlaneNodeCur = pstPlaneNodeCur->pstNext)
 	{
@@ -494,7 +493,7 @@ void Book(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 	//将订票人结构体指向尾巴
  //输入目的地
 	printf("please Input Dest City:\n");
-	scanf_s("%s", &acDest, 20);
+	scanf("%s", &acDest, 20);
 	getchar();
 	//查找目的地 存入结构体数组中
 	pstPlaneNodeCur = pstPlaneNodeHead->pstNext;
@@ -522,7 +521,7 @@ void Book(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 	else
 	{
 		printf("do you want to book it?(y(Y)/n(N))");
-		scanf_s("%s", acDecision, 2);
+		scanf("%s", acDecision, 2);
 		getchar();
 		if (strcmp(acDecision, "y") == 0 || strcmp(acDecision, "Y") == 0)
 		{
@@ -530,19 +529,19 @@ void Book(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 			astManNodeTemp = (PManNode)malloc(sizeof(ManNode));
 			//assert
 			printf("Input your Name :\n");
-			scanf_s("%s", acName, 20);
+			scanf("%s", acName, 20);
 			strcpy(astManNodeTemp->stDate.acName, acName);
 
 			printf("Input your Id: \n");
-			scanf_s("%s", acId, 20);
+			scanf("%s", acId, 20);
 			strcpy(astManNodeTemp->stDate.acID, acId);
 
 			printf("Input your sex（M/F) : \n");
-			scanf_s("%s", acSex, 10);
+			scanf("%s", acSex, 10);
 			strcpy(astManNodeTemp->stDate.acSex, acSex);
 
 			printf("Input your Flights :\n");
-			scanf_s("%s", acFlight, 20);
+			scanf("%s", acFlight, 20);
 			strcpy(astManNodeTemp->stDate.acBookFilght, acFlight);
 
 			for (k = 0; k < iRecord; k++)
@@ -565,7 +564,7 @@ void Book(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 				return;
 			}
 			printf("Input the book number: \n"); //订购几张票
-			scanf_s("%d", &iNum);
+			scanf("%d", &iNum);
 			astPlaneNode[k]->stDate.iNum = astPlaneNode[k]->stDate.iNum - iNum;  //还剩下的票数
 			astManNodeTemp->stDate.iBookNum = iNum;  //订购票数
 
@@ -589,7 +588,7 @@ void Refund(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 	int iBookNum;  //
 	//找到订票人的结构体
 	printf("Input your Id!\n");
-	scanf_s("%s", acId, 20);
+	scanf("%s", acId, 20);
 
 	pstManNodeFind = FindMan(pstManNodeHead, acId);
 	if (pstManNodeFind == NULL)
@@ -606,7 +605,7 @@ void Refund(PPlaneNode pstPlaneNodeHead, PManNode pstManNodeHead)
 		printf("book number:%d\n", pstManNodeFind->stDate.iBookNum);
 
 		printf("do you want to cancel it ?(y/n)");
-		scanf_s("%s", acDecision, 2);
+		scanf("%s", acDecision, 2);
 		getchar();
 		if (strcmp(acDecision, "y") == 0)
 		{
@@ -640,10 +639,10 @@ void SavePlane(struct PlaneNode* pstPlaneNodeHead)
 	int count = 0; //保存信息个数
 	int iFlag = 1;
 	int error = 0;
-	//pfPlane = fopen("plane.txt", "wb");
-	error = fopen_s(&pfPlane, "plane.txt", "wb");
+	pfPlane = fopen("plane.txt", "wb");
+	//error = fopen(&pfPlane, "plane.txt", "wb");
 
-	if (error != 0)
+	if (pfPlane == NULL)
 	{
 		printf("the file can't be opened!\n");
 		return;
@@ -687,9 +686,9 @@ void SaveMan(struct ManNode* pstManNodeHead)
 	int count = 0;
 	int iFlag = 1;
 	int error = 0;
-	//pfMan = fopen("man.txt", "wb");
-	error = fopen_s(&pfMan, "man.txt", "wb");
-	if (error != 0)
+	pfMan = fopen("man.txt", "wb");
+	//error = fopen(&pfMan, "man.txt", "wb");
+	if (pfMan == NULL)
 	{
 		printf("the file can't be opened!\n");
 	}
@@ -743,7 +742,7 @@ int main()
 		system("cls");
 		Menu();
 		printf("Input 0-9 operations:");
-		scanf_s("%d", &iSel);
+		scanf("%d", &iSel);
 		getchar();
 		switch (iSel)
 		{

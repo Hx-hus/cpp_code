@@ -1,0 +1,175 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\你干嘛!\AppData\Local\Temp\RSP2E72.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/test.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c"
+]
+Creating command line "cl.exe @"C:\Users\你干嘛!\AppData\Local\Temp\RSP2E72.tmp"" 
+Creating temporary file "C:\Users\你干嘛!\AppData\Local\Temp\RSP2E73.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/test.pdb" /debug /machine:I386 /out:"Debug/test.exe" /pdbtype:sept 
+".\Debug\test.obj"
+]
+Creating command line "link.exe @"C:\Users\你干嘛!\AppData\Local\Temp\RSP2E73.tmp""
+<h3>Output Window</h3>
+Compiling...
+test.c
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(91) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(92) : error C2275: 'PManNode' : illegal use of this type as an expression
+        d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(51) : see declaration of 'PManNode'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(92) : error C2146: syntax error : missing ';' before identifier 'q'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(92) : error C2065: 'q' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(92) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(93) : error C2065: 'p' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(93) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(95) : warning C4047: 'initializing' : 'struct PlaneNode *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(96) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(99) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(101) : warning C4047: 'initializing' : 'struct ManNode *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(102) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(138) : error C2275: 'FILE' : illegal use of this type as an expression
+        d:\microsoft visual studio\vc98\include\stdio.h(156) : see declaration of 'FILE'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(138) : error C2065: 'pfMan' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(139) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(140) : error C2065: 'pstManNodeCur' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(140) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(141) : error C2065: 'pstManNodeTemp' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(141) : warning C4047: '=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(142) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct _iobuf *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(143) : warning C4047: '==' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(150) : error C2223: left of '->_flag' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(152) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(153) : warning C4022: 'fread' : pointer mismatch for actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(153) : warning C4047: 'function' : 'struct _iobuf *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(153) : warning C4024: 'fread' : different types for formal and actual parameter 4
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(155) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(156) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(160) : warning C4022: 'free' : pointer mismatch for actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(161) : warning C4047: 'function' : 'struct _iobuf *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(161) : warning C4024: 'fclose' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(173) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(174) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(175) : error C2065: 'pstHead' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(175) : error C2065: 'pstTail' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(175) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct PlaneNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(178) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(180) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(186) : warning C4013: 'scanf_s' undefined; assuming extern returning int
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(186) : error C2065: 'acFlight' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(188) : warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(188) : warning C4024: 'strcmp' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(193) : error C2065: 'pstCur' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(193) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct PlaneNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(195) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(197) : warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(197) : warning C4024: 'strcmp' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(197) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(197) : error C2198: 'strcmp' : too few actual parameters
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(202) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(205) : error C2065: 'pstNew' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(205) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct PlaneNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(206) : warning C4013: 'strcpy_s' undefined; assuming extern returning int
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(206) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(209) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(211) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(213) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(215) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(217) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(219) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(221) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(223) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(224) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(240) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(241) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(242) : error C2275: 'PPlaneNode' : illegal use of this type as an expression
+        d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(35) : see declaration of 'PPlaneNode'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(242) : error C2146: syntax error : missing ';' before identifier 'pstPlaneNodeCur'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(242) : error C2065: 'pstPlaneNodeCur' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(242) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct PlaneNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(243) : warning C4047: '==' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(249) : error C2065: 'iSel' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(257) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(257) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(259) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(259) : error C2198: 'strcmp' : too few actual parameters
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(263) : warning C4047: 'function' : 'struct PlaneNode *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(263) : warning C4024: 'PrintDate' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(275) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(275) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(277) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(277) : error C2198: 'strcmp' : too few actual parameters
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(281) : warning C4047: 'function' : 'struct PlaneNode *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(281) : warning C4024: 'PrintDate' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(282) : error C2065: 'icount' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(323) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(324) : error C2275: 'PPlaneNode' : illegal use of this type as an expression
+        d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(35) : see declaration of 'PPlaneNode'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(324) : error C2146: syntax error : missing ';' before identifier 'pstPlaneNodeCur'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(324) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct PlaneNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(325) : warning C4047: '==' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(334) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(334) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(336) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(336) : warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(336) : warning C4024: 'strcmp' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(336) : error C2198: 'strcmp' : too few actual parameters
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(356) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(360) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(364) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(368) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(372) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(376) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(380) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(384) : error C2223: left of '->stDate' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(403) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(412) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(414) : warning C4047: 'function' : 'struct PlaneNode *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(414) : warning C4024: 'PrintDate' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(415) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(644) : warning C4013: 'fopen_s' undefined; assuming extern returning int
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(685) : error C2275: 'FILE' : illegal use of this type as an expression
+        d:\microsoft visual studio\vc98\include\stdio.h(156) : see declaration of 'FILE'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(686) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(687) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(688) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(689) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(691) : error C2065: 'error' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(697) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(698) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(700) : warning C4022: 'fwrite' : pointer mismatch for actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(700) : warning C4047: 'function' : 'struct _iobuf *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(700) : warning C4024: 'fwrite' : different types for formal and actual parameter 4
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(702) : error C2223: left of '->pstNext' must point to struct/union
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(703) : error C2065: 'count' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(707) : error C2065: 'iFlag' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(716) : warning C4047: 'function' : 'struct _iobuf *' differs in levels of indirection from 'int '
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(716) : warning C4024: 'fclose' : different types for formal and actual parameter 1
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(732) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(733) : error C2065: 'pstManNodeHead' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(733) : error C2224: left of '.pstNext' must have struct/union type
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(735) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(737) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(740) : error C2143: syntax error : missing ';' before 'type'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(758) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(770) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(776) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(783) : error C2065: 'c1' : undeclared identifier
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(787) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(792) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+d:\代码仓库\initial-c-max\飞机管理系统1\飞机管理系统1\test.c(798) : warning C4133: 'function' : incompatible types - from 'int *' to 'struct ManNode *'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+test.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
