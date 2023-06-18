@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 五子棋 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\你干嘛!\AppData\Local\Temp\RSP2CD9.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/五子棋.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp"
+"D:\代码仓库\initial-c-max\五子棋\五子棋\1.cpp"
+]
+Creating command line "cl.exe @"C:\Users\你干嘛!\AppData\Local\Temp\RSP2CD9.tmp"" 
+Creating temporary file "C:\Users\你干嘛!\AppData\Local\Temp\RSP2CDA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/五子棋.pdb" /debug /machine:I386 /out:"Debug/五子棋.exe" /pdbtype:sept 
+".\Debug\五子棋.obj"
+".\Debug\1.obj"
+]
+Creating command line "link.exe @"C:\Users\你干嘛!\AppData\Local\Temp\RSP2CDA.tmp""
+<h3>Output Window</h3>
+Compiling...
+五子棋.cpp
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(1) : error C2018: unknown character '0xef'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(1) : error C2018: unknown character '0xbb'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(1) : error C2018: unknown character '0xbf'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(1) : error C2014: preprocessor command must start as first nonwhite space
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(52) : error C2065: 'COORD' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(52) : error C2146: syntax error : missing ';' before identifier 'c'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(52) : error C2065: 'c' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(53) : error C2228: left of '.X' must have class/struct/union type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(54) : error C2228: left of '.Y' must have class/struct/union type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(55) : error C2065: 'SetConsoleCursorPosition' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(55) : error C2065: 'GetStdHandle' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(55) : error C2065: 'STD_OUTPUT_HANDLE' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2065: 'x' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2065: 'y' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2065: 'aiDir' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2065: 'i' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(181) : error C2374: 'j' : redefinition; multiple initialization
+        D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(179) : see declaration of 'j'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(181) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(181) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(181) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(181) : error C2109: subscript requires array or pointer type
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(185) : error C2143: syntax error : missing ';' before 'return'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(186) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(186) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(186) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(189) : error C2143: syntax error : missing ';' before '{'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(189) : error C2447: missing function header (old-style formal list?)
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(208) : error C2601: 'NewGame' : local function definitions are illegal
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(217) : error C2601: 'DrawBoard' : local function definitions are illegal
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(278) : error C2043: illegal break
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(279) : error C2046: illegal case
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(282) : error C2043: illegal break
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(284) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(284) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(284) : error C2143: syntax error : missing ';' before '}'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(287) : error C2143: syntax error : missing ';' before '{'
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(287) : error C2447: missing function header (old-style formal list?)
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(318) : error C2065: 'iPlayer' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(322) : error C2065: 'exit' : undeclared identifier
+D:\代码仓库\initial-c-max\五子棋\五子棋\五子棋.cpp(351) : fatal error C1071: unexpected end of file found in comment
+1.cpp
+D:\代码仓库\initial-c-max\五子棋\五子棋\1.cpp(181) : error C2146: syntax error : missing ']' before identifier 'aiDir'
+D:\代码仓库\initial-c-max\五子棋\五子棋\1.cpp(181) : error C2143: syntax error : missing ';' before ')'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+五子棋.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
