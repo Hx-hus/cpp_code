@@ -6,8 +6,8 @@
 #include<time.h>
 
 //定义的常量
-#define ROW 3//行
-#define LIN 3//列
+#define ROW 20//行
+#define LIN 20//列
 #define WIN 3//几个连一起胜利
 #define PING ROW*LIN//棋盘有多少个格子
 
