@@ -1,5 +1,3 @@
-#pragma once
-
 #include"dlist.h"
 
 //Ïú»ÙÁ´±í
@@ -76,7 +74,7 @@ void ListErase(ListNode* pos)
 {
 	assert(pos);
 
-	pos->_prev = pos->_next;
+	pos->_prev->_next = pos->_next;
 	pos->_next->_prev = pos->_prev;
 
 	free(pos);
